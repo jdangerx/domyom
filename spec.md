@@ -80,9 +80,15 @@ http://wiki.dominionstrategy.com/index.php/Dominion_(Base_Set)
 If you ever wish to play no more actions or buy no more cards your function should return the string ‘None’.
 
 Action choice function:
-Your action_choice function accepts an instance of player_info, it returns one of the the 16 card name strings or ‘None’. 
 
-Your action_choice function needs to return a string of the action card name you wish to play. If you do not want to play any more actions your function should return the string ‘None’. action_choice will be initially called at the beginning of your turn then it will be looped until either ‘None’ is returned or buys = 0.
+Your action_choice function accepts an instance of player_info, it
+returns one of the the 16 card name strings or ‘None’.
+
+Your action_choice function needs to return a string of the action
+card name you wish to play. If you do not want to play any more
+actions your function should return the string ‘None’. action_choice
+will be initially called at the beginning of your turn then it will be
+looped until either ‘None’ is returned or buys = 0.
 
 Sample action choice function:
 def action_choice(player_info):
@@ -98,7 +104,10 @@ def action_choice(player_info):
 
 
 Action execute strategy function:
-Your action_execute_strategy function accepts an instance of player_info and a string, what it returns changes based on the action that was played.
+
+Your action_execute_strategy function accepts an instance of
+player_info and a string, what it returns changes based on the action
+that was played.
 
     Actions with no strategy required:
 'Village'
